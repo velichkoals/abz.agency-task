@@ -1,8 +1,9 @@
 import React from 'react';
-
-import './HomePage.sass';
 import { Navigation } from '../../components/Navigation/Navigation';
 import { Banner } from '../../components/Banner/Banner';
+import { Cards } from '../../components/Cards/Cards';
+
+import './HomePage.sass';
 
 export const HomePage = () => {
 	return (
@@ -10,6 +11,7 @@ export const HomePage = () => {
 			<Navigation />
 			<div className='container'>
 				<Banner />
+				<Cards />
 			</div>
 		</>
 	);
