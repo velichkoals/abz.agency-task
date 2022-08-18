@@ -17,7 +17,7 @@ export const Cards = () => {
 			})
 			.catch((err) => console.log(err));
 	}, []);
-	console.log(cards);
+
 	return (
 		<section className='cards'>
 			<div className='cards__title'>Working with GET request</div>
