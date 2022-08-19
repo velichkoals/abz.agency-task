@@ -105,7 +105,6 @@ export const UserForm = () => {
 					<SuccessImage className='user-form__img_success' />
 				</div>
 			)}
-			)}
 		</FormProvider>
 	);
 };
