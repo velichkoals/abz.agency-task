@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## Link to deployment - https://abz-task.netlify.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3>Used libs:</h3>
 
-## Available Scripts
+- react-router/react-router-dom - https://reactrouter.com
+- react-hook-form - https://react-hook-form.com
+- redux - https://redux.js.org
+- redux-thunk - https://github.com/reduxjs/redux-thunk
+- axios - https://axios-http.com
 
-In the project directory, you can run:
 
-### `npm start`
+<h3>Linters:</h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- prettier - https://prettier.io
+- eslint - https://eslint.org
+#
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h3>Task execution time</h3>
 
-### `npm test`
+<h4>17.08</h4>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 10:48 —> 12:24
+- 12:56 —> 15:08
+- 17:02 —> 18:32
 
-### `npm run build`
+<h4>18.08</h4>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 09:45 —> 11:37
+- 12:55 —> 13:40
+- 16:25 —> 17:14
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h4>19.08</h4>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 09:54 —> 11:34
+- 12:15 —> 13:22 
+- 16:35 —> 18:31
+- 19:15 —> 19:30
 
-### `npm run eject`
++40min deploy, self tests, GitHub description
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Total - 13h 37min
