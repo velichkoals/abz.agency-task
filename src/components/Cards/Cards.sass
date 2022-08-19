@@ -34,6 +34,43 @@
 
   &__name
     margin: 4px 0 23px 0
+    text-align: center
+
+.btn_display-none
+  display: none
+
+.card__item
+  width: 180px
+  white-space: nowrap
+  text-overflow: ellipsis
+  text-align: center
+  overflow: hidden
+  position: relative
+  display: inline-block
+
+  &:hover
+    cursor: pointer
+    overflow: visible
+    .tooltip
+      visibility: visible !important
+      overflow: visible !important
+      opacity: 1
+
+  .tooltip
+    overflow: visible
+    visibility: hidden
+    background-color: $black-color
+    color: $white-color
+    text-align: center
+    border-radius: 4px
+    padding: 3px 4px
+    position: absolute
+    z-index: 1
+    bottom: -50%
+    left: 50%
+    opacity: 0
+    transition: opacity 0.3s
+
 
 @media (max-width: 2650px)
   .cards__list

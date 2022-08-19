@@ -10,26 +10,27 @@ export const PhotoInput = ({ errors }) => {
 	return (
 		<div className='photo-input__wrapper'>
 			<input
-				{...register('file', {
+				{...register('photo', {
 					onChange: (e) => setFileName(e.target.files[0].name),
 					required: 'Upload photo',
 				})}
 				type='file'
+				accept='image/jpeg, image/jpg'
 				id='photo-input'
 				hidden
 			/>
 			<label
 				htmlFor='photo-input'
-				className={`photo-input ${errors?.file?.message && 'input-err'}`}
+				className={`photo-input ${errors?.photo?.message && 'input-err'}`}
 			>
 				Upload
 			</label>
 			<div
-				className={`photo-input__file ${errors?.file?.message && 'input-err'}`}
+				className={`photo-input__file ${errors?.photo?.message && 'input-err'}`}
 			>
 				{fileName}
 			</div>
-			<div className='err-message photo-err'>{errors?.file?.message}</div>
+			<div className='err-message photo-err'>{errors?.photo?.message}</div>
 		</div>
 	);
 };

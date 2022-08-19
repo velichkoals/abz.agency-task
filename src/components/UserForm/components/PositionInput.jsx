@@ -23,7 +23,7 @@ export const PositionInput = () => {
 			{positions.map((position) => (
 				<div className='position__item' key={position.id}>
 					<input
-						{...register('position', { required: 'Select position' })}
+						{...register('position_id', { required: 'Select position' })}
 						type='radio'
 						id={position.id}
 						className='position__input'

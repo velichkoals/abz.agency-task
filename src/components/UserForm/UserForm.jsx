@@ -7,23 +7,30 @@ import { PhoneInput } from './components/PhoneInput';
 import { PositionInput } from './components/PositionInput';
 import { PhotoInput } from './components/PhotoInput';
 import { ReactComponent as SuccessImage } from '../../assets/success-image.svg';
+import { useDispatch, useSelector } from 'react-redux';
+import { setUser } from '../../store/users/thunk';
+import { getUserErrMessage } from '../../store/selectors';
 
 import './UserForm.sass';
 
 export const UserForm = () => {
+	const dispatch = useDispatch();
+	const userErr = useSelector(getUserErrMessage);
 	const formMethods = useForm({ mode: 'onChange' });
 	const {
-		formState: { errors, isDirty, isValid, isSubmitted },
+		formState: { errors, isDirty, isValid },
 		handleSubmit,
 	} = formMethods;
 
 	const validateForm = (data) => {
-		console.log(data);
+		data.photo = data.photo[0];
+		data.position_id = parseInt(data.position_id);
+		dispatch(setUser(data));
 	};
 
 	return (
 		<FormProvider {...formMethods}>
-			{!isSubmitted ? (
+			{userErr !== 'successful' ? (
 				<form
 					className='user-form'
 					id='sign-up'
@@ -74,7 +81,7 @@ export const UserForm = () => {
 						options={{
 							required: 'This field is required.',
 							pattern: {
-								value: /^[\+]{0,1}380([0-9]{9})$/,
+								value: /^\+380([0-9]{9})$/,
 								message: 'Invalid phone number.',
 							},
 						}}
@@ -84,6 +91,7 @@ export const UserForm = () => {
 					/>
 					<PositionInput errors={errors} />
 					<PhotoInput errors={errors} />
+					<div className='user-form__error'>{userErr}</div>
 					<Button
 						type='submit'
 						text='Sign up'
@@ -96,6 +104,7 @@ export const UserForm = () => {
 					<div className='user-form__title'>User successfully registered</div>
 					<SuccessImage className='user-form__img_success' />
 				</div>
+			)}
 			)}
 		</FormProvider>
 	);

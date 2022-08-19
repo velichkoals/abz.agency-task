@@ -4,6 +4,7 @@
   display: flex
   flex-direction: column
   align-items: center
+  position: relative
 
   &__title
     font-size: $heading-size
@@ -20,6 +21,12 @@
   &__img_success
     margin: 80px 0 250px 0
 
+  &__error
+    position: absolute
+    bottom: 150px
+    color: $error-color
+    font-weight: 600
+
 .input__wrapper
   position: relative
 
@@ -30,6 +37,8 @@
     display: flex
     align-items: center
     margin-bottom: 7px
+    &:hover, label:hover, input:hover
+      cursor: pointer
   &__input
     appearance: none
     width: 20px
