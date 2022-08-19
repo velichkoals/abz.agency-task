@@ -32,6 +32,7 @@ export const setUser = (user) => {
 			.then(() => {
 				dispatch(setUserErrAction('successful'));
 				dispatch(getAllUsersThunk());
+				dispatch(setPageAction(1));
 			})
 			.catch((err) => dispatch(setUserErrAction(err.response.data.message)));
 	};
