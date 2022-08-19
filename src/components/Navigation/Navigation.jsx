@@ -10,8 +10,12 @@ export const Navigation = () => {
 			<nav className='nav'>
 				<Logo className='nav__logo' />
 				<div className='nav__buttons'>
-					<Button className='nav__btn' text='Users' />
-					<Button className='nav__btn' text='Sign up' />
+					<a href='#users'>
+						<Button href='#users' className='nav__btn' text='Users' />
+					</a>
+					<a href='#sign-up'>
+						<Button className='nav__btn' text='Sign up' />
+					</a>
 				</div>
 			</nav>
 		</div>

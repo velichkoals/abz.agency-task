@@ -19,7 +19,7 @@ export const Cards = () => {
 	}, []);
 
 	return (
-		<section className='cards'>
+		<section className='cards' id='users'>
 			<div className='cards__title'>Working with GET request</div>
 			<div className='cards__list'>
 				{cards.map((card) => (

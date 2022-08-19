@@ -10,9 +10,9 @@ import { PhotoInput } from './components/PhotoInput';
 import './UserForm.sass';
 
 export const UserForm = () => {
-	const formMethods = useForm({ mode: 'onBlur' });
+	const formMethods = useForm({ mode: 'onChange' });
 	const {
-		formState: { errors },
+		formState: { errors, isDirty, isValid },
 		handleSubmit,
 	} = formMethods;
 
@@ -20,6 +20,7 @@ export const UserForm = () => {
 		<FormProvider {...formMethods}>
 			<form
 				className='user-form'
+				id='sign-up'
 				onSubmit={handleSubmit((data) => console.log(data))}
 			>
 				<div className='user-form__title'>Working with POST request</div>
@@ -77,7 +78,12 @@ export const UserForm = () => {
 				/>
 				<PositionInput errors={errors} />
 				<PhotoInput errors={errors} />
-				<Button type='submit' text='Sign up' className='user-form__btn' />
+				<Button
+					type='submit'
+					text='Sign up'
+					className='user-form__btn'
+					disabled={!isDirty || !isValid}
+				/>
 			</form>
 		</FormProvider>
 	);

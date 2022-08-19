@@ -1,5 +1,8 @@
 @import "../../variables"
 
+html
+  scroll-behavior: smooth
+
 *
   margin: 0
   padding: 0
@@ -17,5 +20,14 @@ body
   justify-content: center
 
 .container
-  width: 1024px
   background-color: $bg-color
+
+
+
+@media (max-width: 2650px)
+  .container
+    width: 1170px
+
+@media (max-width: 1200px)
+  .container
+    width: 1024px
